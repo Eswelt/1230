@@ -1,0 +1,111 @@
+/* ========================
+   Page-B 样式
+   第二页布局及内容样式
+======================== */
+
+/* 父容器样式：Page-B */
+.page-b {
+  height: 100vh; /* 页面高度为视口高度 */
+  display: flex; /* 使用 Flex 布局 */
+  flex-direction: column; /* 子元素从上到下排列 */
+  justify-content: flex-start; /* 子元素从顶部开始排列 */
+  align-items: stretch; /* 子元素宽度覆盖父容器 */
+  padding: 0; /* 内边距为 0 */
+  gap: 25vh; /* 左右文本框之间的间距 */
+  box-sizing: border-box; /* 确保边距和内边距不影响宽度 */
+  background-color: #e1f7ee; /* 设置背景颜色 */
+}
+
+/* 左对齐文本框 */
+.left-box {
+  margin-top: 10vh;
+  text-align: left; /* 左对齐文本 */
+  margin-left: 5vw; /* 与页面左侧的距离 */
+  box-sizing: border-box; /* 包括内边距和边框计算宽度 */
+}
+
+.left-box h2 {
+  font-size: calc(2rem + 0.4vw); /* 标题字体大小，动态适配 */
+  color:#6A9C89;
+  line-height: 1.2; /* 标题行距 */
+  margin-bottom: 8px; /* 标题与正文的间距 */
+  font-weight: bold; /* 加粗文字 */
+}
+
+.left-box p {
+  font-size: calc(1rem + 0.3vw); /* 正文字体大小，动态适配 */
+  color: #16423C;
+  line-height: 1.4; /* 正文行距 */
+  margin: 4px 0; /* 段落间距 */
+}
+
+/* 右对齐文本框 */
+.right-box {
+  text-align: right; /* 右对齐文本 */
+  margin-right: 5vw; /* 与页面右侧的距离 */
+  box-sizing: border-box; /* 包括内边距和边框计算宽度 */
+}
+
+.right-box h2 {
+  font-size: calc(2rem + 0.4vw); /* 标题字体大小，动态适配 */
+  color:#6A9C89;
+  line-height: 1.2; /* 标题行距 */
+  margin-bottom: 8px; /* 标题与正文的间距 */
+}
+
+.right-box p {
+  font-size: calc(1rem + 0.3vw); /* 正文字体大小，动态适配 */
+  color: #16423C;
+  line-height: 1.4; /* 正文行距 */
+  margin: 4px 0; /* 段落间距 */
+}
+
+.highlight {
+  font-size: inherit; /* 保持与正文一致的字号 */
+  color: #6A9C89; 
+  font-weight: bold; /* 加粗文字 */
+}
+
+/* ========================
+   Page-B 媒体查询
+======================== */
+
+/* 针对 iPhone 12 Pro 及更小屏幕 */
+@media (max-width: 399px) {
+    .left-box h2,
+    .right-box h2 {
+      font-size: calc(1.6rem + 0.3vw); /* 动态调整标题大小 */
+    }
+  
+    .left-box p,
+    .right-box p {
+      font-size: calc(1.2rem + 0.3vw); /* 动态调整正文字体大小 */
+    }
+  }
+
+  /* 针对荣耀100pro和 iPhone 14 Pro 等中等屏幕 */
+  @media screen and (min-width: 400px) and (max-width: 600px) {
+    .left-box h2,
+    .right-box h2 {
+      font-size: calc(2.2rem + 0.3vw); /* 动态调整标题大小 */
+    }
+  
+    .left-box p,
+    .right-box p {
+      font-size: calc(1.3rem + 0.3vw); /* 动态调整正文字体大小 */
+    }
+  }
+
+
+  /* 针对 iPad 及更大屏幕 */
+  @media (min-width: 601px) {
+    .left-box h2,
+    .right-box h2 {
+      font-size: calc(3rem + 0.3vw); /* 动态调整标题大小 */
+    }
+  
+    .left-box p,
+    .right-box p {
+      font-size: calc(1.8rem + 0.3vw); /* 动态调整正文字体大小 */
+    }
+  }

@@ -1,0 +1,82 @@
+/* ========================
+   全局基础样式
+======================== */
+
+/* 设置全局的样式，包括字体、背景颜色和禁止页面滚动 */
+html, body {
+  overflow: hidden; /* 禁止滚动，避免出现滚动条 */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* 全局字体 */
+  box-sizing: border-box; /* 全局设置为 border-box 模型 */
+}
+
+/* ========================
+   全局动画效果
+======================== */
+
+/* 通用淡入动画效果 */
+.fade-in {
+  opacity: 0; /* 初始透明度为 0 */
+  animation: fadeIn 1s ease forwards; /* 在 1 秒内淡入，最终状态保持 */
+}
+
+/* 动画定义：淡入效果 */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* 起始状态完全透明 */
+  }
+  to {
+    opacity: 1; /* 最终状态完全可见 */
+  }
+}
+
+/* 网易云式文字动画 */
+.textAni {
+  animation-name: textAniKey; /* 关联的关键帧动画 */
+  animation-duration: 1.5s; /* 动画时长为 1.5 秒 */
+  animation-timing-function: cubic-bezier(0, 0, 0.5, 1); /* 贝塞尔曲线控制动画节奏 */
+  animation-iteration-count: 1; /* 动画只播放一次 */
+  animation-fill-mode: both; /* 保留动画结束状态 */
+}
+
+/* 动画定义：网易云文字效果 */
+@keyframes textAniKey {
+  0% {
+    transform: translateY(2vw); /* 初始位置向下偏移 2vw */
+    opacity: 0; /* 初始状态透明 */
+  }
+  100% {
+    transform: translateY(0); /* 最终位置回到原点 */
+    opacity: 1; /* 最终状态完全可见 */
+  }
+}
+
+ /* 箭头图标样式 */
+ .arrow {
+  position: absolute;
+  bottom: 5vh; /* 距离页面底部 20px */
+  left: 50%; /* 水平居中 */
+  transform: translateX(-50%);
+  width: 40px; /* 图标宽度 */
+  height: 40px; /* 图标高度 */
+  background-image: url('../images/UpArrow.png'); /* 替换为你的图标路径 */
+  background-size: contain; /* 图标完全适配 */
+  background-repeat: no-repeat; /* 防止重复显示 */
+  opacity: 0; /* 初始隐藏 */
+  z-index: 10;
+  animation: fadeInOut 2s infinite; /* 添加时隐时现动画 */
+  animation-delay: 3s; /* 延迟动画开始 */
+}
+
+/* 定义时隐时现动画 */
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0; /* 起始和结束透明 */
+  }
+  50% {
+    opacity: 1; /* 中间完全可见 */
+  }
+}
+
+

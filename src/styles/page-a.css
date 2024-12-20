@@ -1,0 +1,137 @@
+/* ========================
+   Page-A 样式
+   第一页布局及内容样式
+======================== */
+
+/* 父容器样式：Page-A */
+.page-a {
+    height: 100vh; /* 高度为视口高度 */
+    display: flex; /* 使用 Flex 布局 */
+    flex-direction: column; /* 子元素从上到下排列 */
+    align-items: center; /* 水平方向居中对齐 */
+    cursor: pointer; /* 鼠标样式为可点击状态 */
+    color: #FFF0DC
+  }
+  
+  /* 第一组文字（标题）容器 */
+  .first-group {
+    display: flex; /* 使用 Flex 布局 */
+    flex-direction: column; /* 子元素从上到下排列 */
+    justify-content: center; /* 子元素垂直居中 */
+    align-items: center; /* 子元素水平居中 */
+    margin-top: 100px; /* 距离页面顶部 100px */
+  }
+  
+  .first-group h1 {
+    font-size: 3rem; /* 标题文字大小 */
+    margin: 5px 0; /* 控制每行标题之间的间距 */
+    color: #543A14; /* 字体颜色 */
+  }
+
+  .first-group h1.large-text {
+    font-size: calc(5rem + 1vw); /* 更大字体 */
+    color: #f6865d; /* 橙红色 */
+    font-weight: bold; /* 加粗字体 */
+  }
+  
+  /* 第二组文字（正文）容器 */
+  .second-group {
+    display: flex; /* 使用 Flex 布局 */
+    flex-direction: column; /* 子元素从上到下排列 */
+    justify-content: center; /* 子元素垂直居中 */
+    align-items: center; /* 子元素水平居中 */
+    margin-top: 300px; /* 距离第一组文字的间距 */
+    gap: 0; /* 子元素之间的间距为 0 */
+  }
+  
+  .second-group p {
+    font-size: 1.2rem; /* 正文字体大小 */
+    line-height: 1px; /* 行高，控制段落内部文字间距 */
+    color: #a08357; /* 字体颜色 */
+  }
+  
+  /* 按钮容器样式 */
+  .button-container {
+    position: absolute; /* 绝对定位 */
+    bottom: 5vh; /* 距离页面底部 5vh */
+    width: 100%; /* 按钮容器宽度为父容器宽度 */
+    display: flex;
+    justify-content: center; /* 按钮水平居中 */
+    align-items: center; /* 按钮垂直居中 */
+    animation: fadeInOut 2s infinite; /* 时隐时现动画，每 2 秒循环一次 */
+  }
+  
+  button {
+    text-align: center; /* 文本居中 */
+    padding: 12px 24px; /* 内边距，控制按钮大小 */
+    background-color: transparent; /* 背景透明 */
+    color: #f6865d; /* 按钮文字颜色 */
+    border: none; /* 移除按钮边框 */
+    cursor: pointer; /* 鼠标样式为手型 */
+  }
+  
+  
+  /* ========================
+     Page-A 媒体查询
+  ======================== */
+  
+  /* 针对 iPhone 12 Pro 及更小屏幕 */
+  @media (max-width: 399px) {
+    .first-group h1 {
+      font-size: calc(2rem + 0.4vw); /* 根据视口宽度动态调整字体 */
+    }
+
+  .first-group h1.large-text {
+    font-size: calc(4rem + 1vw); 
+  }
+    .second-group {
+      margin-top: 8vh; /* 减少与第一组文字的间距 */
+    }
+  
+    .second-group p {
+      font-size: calc(1rem + 0.4vw); /* 动态调整字体大小 */
+    }
+  
+    button {
+      font-size: 1rem; /* 按钮文字大小调整 */
+    }
+  }
+  
+  /* 针对 iPhone 14 Pro 等中等屏幕 */
+  @media screen and (min-width: 400px) and (max-width: 600px) {
+    .first-group h1 {
+      font-size: calc(2.5rem + 0.4vw);
+    }
+  
+    .second-group {
+      margin-top: 5vh;
+    }
+  
+    .second-group p {
+      font-size: calc(1.2rem + 0.4vw);
+    }
+  
+    button {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* 针对 iPad 及更大屏幕 */
+  @media (min-width: 601px) {
+    .first-group h1 {
+      font-size: calc(3.5rem + 0.4vw);
+    }
+
+    .second-group {
+        margin-top: 12vh; /* 减少与第一组文字的间距 */
+      }
+    .second-group p {
+      font-size: calc(1.8rem + 0.4vw);
+    }
+  
+    button {
+      font-size: 1.8rem;
+      padding: 12px 24px;
+    }
+  }
+  

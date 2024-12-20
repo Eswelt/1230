@@ -1,0 +1,88 @@
+/* ========================
+   Page-C 样式
+   第三页布局及内容样式
+======================== */
+
+.page-c {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 0;
+    gap: 15vh;
+    background-color: #e1f7ee; /* 设置背景颜色 */
+    box-sizing: border-box;
+  }
+  
+  .right-box {
+    margin-top: 10vh;
+    width: 100%;
+    text-align: right;
+    padding-right: 2rem;
+    box-sizing: border-box;
+  }
+  
+  .right-box h2 {
+    font-size: calc(2rem + 0.4vw);
+    line-height: 1.2;
+    margin-bottom: 8px;
+    color:#6A9C89;
+  }
+  
+  .right-box p {
+    font-size: calc(1rem + 0.3vw);
+    line-height: 1.4;
+    margin: 4px 0;
+    color: #16423C;
+  }
+  
+  .highlight {
+    font-size: inherit; /* 保持与正文一致的字号 */
+    color: #6A9C89; 
+    font-weight: bold; /* 加粗文字 */
+  }
+
+/* ========================
+   媒体查询
+======================== */
+
+/* 针对 iPhone 12 Pro 及更小屏幕 */
+@media (max-width: 399px) {
+    .left-box h2,
+    .right-box h2 {
+      font-size: calc(1.6rem + 0.3vw); /* 动态调整标题大小 */
+    }
+  
+    .left-box p,
+    .right-box p {
+      font-size: calc(1.2rem + 0.3vw); /* 动态调整正文字体大小 */
+    }
+  }
+
+  /* 针对荣耀100pro和 iPhone 14 Pro 等中等屏幕 */
+  @media screen and (min-width: 400px) and (max-width: 600px) {
+    .left-box h2,
+    .right-box h2 {
+      font-size: calc(2.2rem + 0.3vw); /* 动态调整标题大小 */
+    }
+  
+    .left-box p,
+    .right-box p {
+      font-size: calc(1.3rem + 0.3vw); /* 动态调整正文字体大小 */
+    }
+  }
+
+
+  /* 针对 iPad 及更大屏幕 */
+  @media (min-width: 601px) {
+    .left-box h2,
+    .right-box h2 {
+      font-size: calc(3rem + 0.3vw); /* 动态调整标题大小 */
+    }
+  
+    .left-box p,
+    .right-box p {
+      font-size: calc(1.8rem + 0.3vw); /* 动态调整正文字体大小 */
+    }
+  }
