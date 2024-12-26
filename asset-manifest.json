@@ -1,13 +1,20 @@
 {
   "files": {
-    "main.css": "/1230/static/css/main.c014dc17.css",
-    "main.js": "/1230/static/js/main.def8cdbd.js",
+    "main.css": "/1230/static/css/main.b52456a7.css",
+    "main.js": "/1230/static/js/main.70788e1d.js",
+    "static/media/Sneeze.gif": "/1230/static/media/Sneeze.2aad3b8cfa197881235c.gif",
+    "static/media/15.png": "/1230/static/media/15.49ea5e8deefee2c89c64.png",
+    "static/media/11.png": "/1230/static/media/11.bb84a09e87c9f2c54059.png",
+    "static/media/14.png": "/1230/static/media/14.928699a142b6febd2b0d.png",
+    "static/media/12.png": "/1230/static/media/12.0103ebc5f328347d73ef.png",
+    "static/media/16.png": "/1230/static/media/16.7d343986afd48646ab08.png",
+    "static/media/13.png": "/1230/static/media/13.107ab5bde9514da089ce.png",
     "index.html": "/1230/index.html",
-    "main.c014dc17.css.map": "/1230/static/css/main.c014dc17.css.map",
-    "main.def8cdbd.js.map": "/1230/static/js/main.def8cdbd.js.map"
+    "main.b52456a7.css.map": "/1230/static/css/main.b52456a7.css.map",
+    "main.70788e1d.js.map": "/1230/static/js/main.70788e1d.js.map"
   },
   "entrypoints": [
-    "static/css/main.c014dc17.css",
-    "static/js/main.def8cdbd.js"
+    "static/css/main.b52456a7.css",
+    "static/js/main.70788e1d.js"
   ]
 }
