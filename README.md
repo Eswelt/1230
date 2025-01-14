@@ -4,4 +4,4 @@ I created this project inspired by the popular Net Music Annual Report. Using Re
 
 To make the project more dynamic and visually appealing, I used Procreate to design custom GIF animations. Additionally, I use R (especially Jieba NLP package) to analyze WeChat chat history data, integrating the insights into the project. These tools allowed me to combine creativity with technical problem-solving, making the development process both rewarding and enjoyable.   
 
-年末亦是岁末，用年度报告祝你生日快乐！
+年末亦是岁末，祝你生日快乐！
