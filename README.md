@@ -1,4 +1,4 @@
-# Happy Birthday! This is your annual report.
+# Personalized Annual Report Sample
 
 I created this project inspired by the popular Net Music Annual Report. Using React.js as the framework, I built a personalized webpage to showcase interactive and visually engaging content. This project serves as a learning journey for me to explore HTML, CSS, and JavaScript, all of which are completely new to me.
 
